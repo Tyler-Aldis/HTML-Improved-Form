@@ -14,10 +14,17 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <requiredspan class="required-field">*</span>
+                <required input="label" ></required>
+                <label for="firstname"></label>
+                <label  for="firstname">Your First Name</label>
+                <input maxength="35"minlength="2"type="text" id="firstname" name="firstname">
+                <label for="Age">Your Age</label>
+                <input min="21" max="120" id="Age" type="number" name="Age">
+                <h5>disclamer you must be 21 to enter this contest.</h5>
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <input minlength="2" maxlength="35"type="text" id="lastname" name="lastname">
+            
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
